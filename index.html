@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="assets/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="src/chart.min.js"></script>
+    <script src="src/hammerjs.js"></script>
+    <script src="src/chartjs-plugin-zoom.js"></script>
+    <title>The Trapped Knight</title>
+</head>
+
+<body>
+    <div id="explaination">
+        <div class="page">
+            <h1 id="title"></h1>
+            <p id="text">
+            </p>
+        </div>
+        <button id="previous" class="modal-button">← Page</button>
+        <button id="next" class="modal-button">Page →</button>
+        <div class="cookie">
+            <label for="cookie">Do not show again</label>
+            <input type="checkbox" name="cookie" id="cookie">
+        </div>
+        <button class="close" id="close-tutorial">x</button>
+    </div>
+    </div>
+    <div class="controls">
+        <div id="visited-section" class="section">
+            <input type="number" placeholder="Set as visited" id="visited" value="">
+            <button id="add-visited"> Add </button>
+        </div>
+        <div id="coords-section" class="section">
+            <label>Starting X</label>
+            <input type="number" id="x" value="0">
+
+            <input type="number" id="y" value="0">
+            <label>Starting Y</label>
+        </div>
+        <div id="button-section" class="section">
+            <button id="play">Play</button>
+            <button id="stop" disabled>Stop</button>
+            <button id="modal-button" disabled>Stats</button>
+        </div>
+        <div id="slider-section" class="section">
+            <label> Fast</label>
+            <input type="range" min="2" max="3000" value="1500" class="slider" id="speed">
+            <label> Slow</label>
+        </div>
+    </div>
+
+    <section id="table">
+        <span id="knight"><img src="assets/knight.png"></span>
+        <section id="perspective">
+            <div class="row">
+                <div class="column"></div>
+                <div class="column"></div>
+                <div class="column"></div>
+                <div class="column"></div>
+                <div class="column"></div>
+                <div class="column"></div>
+                <div class="column"></div>
+            </div>
+            <div class="row">
+                <div class="column"></div>
+                <div class="column"></div>
+                <div class="column"></div>
+                <div class="column"></div>
+                <div class="column"></div>
+                <div class="column"></div>
+                <div class="column"></div>
+            </div>
+            <div class="row">
+                <div class="column"></div>
+                <div class="column"></div>
+                <div class="column"></div>
+                <div class="column"></div>
+                <div class="column"></div>
+                <div class="column"></div>
+                <div class="column"></div>
+            </div>
+            <div class="row">
+                <div class="column"></div>
+                <div class="column"></div>
+                <div class="column"></div>
+                <div class="column" id="center"></div>
+                <div class="column"></div>
+                <div class="column"></div>
+                <div class="column"></div>
+            </div>
+            <div class="row">
+                <div class="column"></div>
+                <div class="column"></div>
+                <div class="column"></div>
+                <div class="column"></div>
+                <div class="column"></div>
+                <div class="column"></div>
+                <div class="column"></div>
+            </div>
+            <div class="row">
+                <div class="column"></div>
+                <div class="column"></div>
+                <div class="column"></div>
+                <div class="column"></div>
+                <div class="column"></div>
+                <div class="column"></div>
+                <div class="column"></div>
+            </div>
+            <div class="row">
+                <div class="column"></div>
+                <div class="column"></div>
+                <div class="column"></div>
+                <div class="column"></div>
+                <div class="column"></div>
+                <div class="column"></div>
+                <div class="column"></div>
+            </div>
+        </section>
+    </section>
+    <div id="stats" class="modal">
+        <canvas id='graph' style="height: auto !important"></canvas>
+        <div id="traps"></div>
+        <button id="close-modal" class="close">x</button>
+    </div>
+    <script src="src/table.js"></script>
+    <script src="src/get-move.js"></script>
+    <script src="src/play.js"></script>
+    <script src="src/tutorial-modal.js"></script>
+    <script src="src/main.js"></script>
+</body>
+
+</html>
