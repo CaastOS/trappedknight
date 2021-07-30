@@ -92,9 +92,12 @@ const createTable = (x, y, size) => { // size is equal to the number of rows in 
 <p>the variable smallestValue is declared outside of this function scope, but it's defined here, and it contains the smallest value stored in relativeMoves. The last unknown item is visited, and it's the array containing every cell we've already visited.<br><br>At this point everything else is quite expressive, and the function that contains this loop will return the next move object. But what if there's no next move? In that case, the function is going to return the string "trap", and the stats relative to the customized problem will be generated.</p><br>
 
 <hp align="center">Obviously, the code written above is just a small part of everything that is done, but it is necessary to understand the basis on which this application operates. If you have any questions about any part of the code, feel free to contact me in any way, and I will be more than happy to answer them!</hp><br>
-<hr>
+<hr><br>
 <h2 align="center"> Project Setup </h2><br>
-<p align="left"> In order to make the application accessible to everyone, it is already hosted on my website. If you want to modify it or contribute to it in any way (btw, every pull request is appreciated!) you can simply clone it and do whatever you want with it!</p><br><br>
+<p align="center"> In order to make the application accessible to everyone, it is already hosted on my website. If you want to modify it or contribute to it in any way (btw, every pull request is appreciated!) you can simply clone it and do whatever you want with it, since it's made in vanilla Javascript only and does not require external libraries.</p><br>
+<h2 align="center"> Credits </h2><br>
+<p align="center"><a href="https://github.com/chartjs/Chart.js"> Chart.js (MIT)</a><br>
+<a href="https://github.com/chartjs/chartjs-plugin-zoom"> chartjs-plugin-zoom (MIT)</a></p><br>
 <h2 align="center"> License </h2><br>
 
 <p align="center">
