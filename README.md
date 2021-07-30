@@ -21,7 +21,8 @@ It’s important to realise that, as the Medium writer Maarten Mortier already p
 <p>The table is dynamically generated using the following algorithm:</p>
 
 ```javascript
-// Diagonal, horizontal, and vertical lines in the number spiral correspond to polynomials of the form f(n) = 4n^2 + bn + c
+// Diagonal, horizontal, and vertical lines in the number spiral correspond to
+// polynomials of the form f(n) = 4n^2 + bn + c
 
 const spiralCell = (x, y) => {
     if (x == y & y == 0) return 1;
@@ -93,7 +94,7 @@ const createTable = (x, y, size) => { // size is equal to the number of rows in 
 <hp align="center">Obviously, the code written above is just a small part of everything that is done, but it is necessary to understand the basis on which this application operates. If you have any questions about any part of the code, feel free to contact me in any way, and I will be more than happy to answer them!</hp><br>
 <hr>
 <h2 align="center"> Project Setup </h2><br>
-<p align="center"> In order to make the application accessible to everyone, it is already hosted on my website. If you want to modify it or contribute to it in any way (btw, every pull request is appreciated!) you can simply clone it and do whatever you want with it!</p><br><br>
+<p align="left"> In order to make the application accessible to everyone, it is already hosted on my website. If you want to modify it or contribute to it in any way (btw, every pull request is appreciated!) you can simply clone it and do whatever you want with it!</p><br><br>
 <h2 align="center"> License </h2><br>
 
 <p align="center">
