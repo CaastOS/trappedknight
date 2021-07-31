@@ -1,5 +1,5 @@
 <h1 align="center"> The Trapped Knight </h1>
-<p align="center"> Inspired by <a href="https://www.youtube.com/watch?v=RGQe8waGJ4w"> Numberphile</a> </p><br>
+<p align="center"> Inspired by <a href="https://www.youtube.com/watch?v=RGQe8waGJ4w"> Numberphile</a> and Neil Sloane</p><br>
 <img src="assets/readme/intro-pic.gif">
 <hr>
 <h2 align="center">Introduction</h2><br>
