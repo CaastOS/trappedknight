@@ -94,7 +94,7 @@ const createTable = (x, y, size) => { // size is equal to the number of rows in 
 <hp align="center">Obviously, the code written above is just a small part of everything that is done, but it is necessary to understand the basis on which this application operates. If you have any questions about any part of the code, feel free to contact me in any way, and I will be more than happy to answer them!</hp><br>
 <hr><br>
 <h2 align="center"> Project Setup </h2><br>
-<p align="center"> In order to make the application accessible to everyone, it is already hosted on my website. If you want to modify it or contribute to it in any way (btw, every pull request is appreciated!) you can simply clone it and do whatever you want with it, since it's made in vanilla Javascript only and does not require external libraries.</p><br>
+<p align="center"> In order to make the application accessible to everyone, it is already hosted on my <a href="https://trappedknight.claudiocastorina.com">website</a>. If you want to modify it or contribute to it in any way (btw, every pull request is appreciated!) you can simply clone it and do whatever you want with it, since it's made in vanilla Javascript only and does not require external libraries.</p><br>
 <h2 align="center"> Credits </h2><br>
 <p align="center"><a href="https://github.com/chartjs/Chart.js"> Chart.js (MIT)</a><br>
 <a href="https://github.com/chartjs/chartjs-plugin-zoom"> chartjs-plugin-zoom (MIT)</a></p><br>
