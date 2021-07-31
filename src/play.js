@@ -104,7 +104,9 @@ const animation = (divTo, speed, divX, divY) => {
 };
 
 const createGraph = () => {
-
+    if (!(chart == null)) {
+        chart.destroy(); // destroy the chart if it already exists
+    }
     const colorScale = []; // inizialize the background color array
 
     for (i = 0; i < graphValues.length; i++) { // iterate through every item and give it a background color to be passed as data.datasets.backgroundColor
@@ -159,7 +161,8 @@ const createGraph = () => {
             }
         }
     };
-    new Chart(graph, data);
+
+    chart = new Chart(graph, data);
 };
 
 const addVisited = () => { // add the value inserted to addInput to visited
