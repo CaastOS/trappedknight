@@ -174,52 +174,66 @@ input[type=range]::-webkit-slider-thumb {
     perspective: 1400px;
     display: table;
     margin: 0 auto;
-    height: 200px;
-    pointer-events: none;
     margin: -10em auto;
-    padding-left: 9px;
+    pointer-events: none;
 }
 
 #center {
-    color: #FDFAEF;
-    background: #e63946;
+    color: #FDFAEF !important;
+    background: #e63946 !important;
     z-index: 2;
 }
 
 #knight {
+    top: 340px;
+    padding-left: 7px;
     z-index: 1;
     text-align: center;
-    top: 340px;
     position: absolute;
     left: 0;
     right: 0;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 7px;
 }
 
 #knight img {
     width: 40px;
-    height: 65px;
 }
 
 .row {
-    display: block;
+    display: flex;
     font-family: Arial;
     font-size: 2rem;
     color: gray;
-    text-align: center;
     z-index: 1;
 }
 
+#perspective>div:nth-child(2n + 1)>div:nth-child(2n + 1) {
+    background: gray;
+    color: white;
+}
+
+#perspective>div:nth-child(2n + 1)>div:nth-child(2n + 2) {
+    background: white;
+    color: gray;
+}
+
+#perspective>div:nth-child(2n + 2)>div:nth-child(2n + 2) {
+    background: gray;
+    color: white;
+}
+
+#perspective>div:nth-child(2n + 2)>div:nth-child(2n + 1) {
+    background: white;
+    color: gray;
+}
+
 .column {
-    display: inline-block;
+    display: inline-flex;
+    justify-content: center;
     width: 85px;
     height: 37px;
-    padding: 38.3px 0;
-    margin-left: -8.9px;
-    margin-bottom: -8.8px;
-    border: 1px solid #000000b6;
+    padding: 38px 0;
     overflow: hidden;
     white-space: nowrap;
     -o-text-overflow: ellipsis;
@@ -402,13 +416,13 @@ input[type=range]::-webkit-slider-thumb {
 }
 
 @media screen and (max-width: 830px) {
+    #knight {
+        top: 314px
+    }
+
     .column {
-        display: inline-block;
-        font-size: 1.5rem;
-        width: 55px;
-        height: 37px;
-        padding: 38.3px 0;
-        margin-left: -8.9px;
+        width: 60px;
+        height: 28px
     }
 
     #explaination {
@@ -426,13 +440,10 @@ input[type=range]::-webkit-slider-thumb {
     }
 
     .column {
-        display: inline-block;
         font-size: 0.8rem;
         width: 35px;
         height: 11px;
         padding: 24px 0;
-        margin-left: -8.9px;
-        margin-bottom: -9px;
     }
 
     #table {
